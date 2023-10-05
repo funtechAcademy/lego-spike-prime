@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="styles/style.css">
+   <link href="https://fonts.googleapis.com/css?family=Bai+Jamjuree&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Sanchez&display=swap" rel="stylesheet">
+   <script src="js/scripts.js"></script>
+   <title>Bloques de Código: Movimiento</title>
+</head>
+<body>
+   <div id="cabecera">
+      <h1>Movimiento</h1>
+   </div>
+   <!-- INICIO_LOADER -->
+   <div id="pageloader">
+      <img src="img/LogoOjo_FTA.png" class="spining" width="100px">
+   </div>
+   <!-- FIN_LOADER -->
+   <div id="contenido">
+      <h2>Bloques De Código: Movimiento</h2>
+      <h3>Movimiento</h3>
+      <p class="texto">
+         Los bloques de movimiento le permiten hacer funcionar dos motores en un movimiento sincronizado. Se utilizan
+         principalmente para mover las bases de conducción o bases motrices. Solo motores del mismo tipo, por ejemplo 
+         dos motores medianos, se pueden sincronizar.
+      </p>
+      <h4>Hacer funcionar el motor en la dirección durante la duración</h4>
+      <p class="texto">
+         Nos permite mover un par de motores sincronizados hacia la dirección indicada, el número especificado, en la 
+         dirección seleccionada
+         <br><br>
+         Utilizaremos el bloque Establecer motores de movimiento para que coincida con los puertos de su modelo que
+         están conectados a motores grandes. Los puertos predeterminados son B (izquierda) y C (derecha).
+         <br><br>
+         La velocidad de los motores se establece mediante el bloque de establecer velocidad de movimiento. La 
+         velocidad predeterminada es del 75%.
+      </p>
+      <p class="img_centrada"><img src="img/bloques2/bloques2-1.png" width="40%" alt=""></p>
+      <p class="texto">
+         Permite seleccionar si queremos avanzar o retroceder con nuestra base motriz.
+      </p>
+      <p class="img_centrada"><img src="img/bloques2/bloques2-2.png" width="40%" alt=""></p>
+      <p class="texto">
+         Indicamos el número de unidades que queremos avanzar o retroceder.         
+      </p>
+      <p class="img_centrada"><img src="img/bloques2/bloques2-3.png" width="40%" alt=""></p>
+      <p class="texto">
+         Por último, la unidad del movimiento.         
+      </p>
+      <p class="img_centrada"><img src="img/bloques2/bloques2-4.png" width="45%" alt=""></p>
+      <h4>Encendido de los motores hacia delante o hacia atrás</h4>
+      <p class="texto">
+         Empieza a mover un modelo hacia la dirección seleccionada hasta que se indica a los motores que hagan otra 
+         cosa o el programa se detiene.
+         <br><br>
+         Utilizaremos el bloque Establecer motores de movimiento para que coincida con los puertos de su modelo que
+         están conectados a motores grandes. Los puertos predeterminados son B (izquierda) y C (derecha).
+         <br><br>
+         La velocidad de los motores se establece mediante el bloque de establecer velocidad de movimiento. La 
+         velocidad predeterminada es del 75%.
+      </p>
+      <p class="img_centrada"><img src="img/bloques2/bloques2-5.png" width="26%" alt=""></p>
+      <h4>Hacer funcionar los motores con la dirección durante la duración</h4>
+      <p class="texto">
+         Nos permite hacer las funciones de un volante.
+         <br><br>
+         Utiliza el bloque Establecer motores de movimiento para que coincida con los puertos de su modelo que están
+         conectados a motores grandes. Los puertos predeterminados son B (izquierda) y C (derecha).
+      </p>
+      <p class="img_centrada"><img src="img/bloques2/bloques2-6.png" width="45%" alt=""></p>
+      <p class="texto">
+         Indicamos la dirección. Según giremos el volante, éste hará el giro indicado.
+      </p>
+      <p class="img_centrada"><img src="img/bloques2/bloques2-7.png" width="45%" alt=""></p>
+      <p class="texto">
+El giro de 100 o -100 es una rotación sobre el eje del robot, es decir que durante el giro este no se desplaza, en porcentajes inferiores hay desplazamiento.
+         <br><br>
+
+
+         Asignamos el número de unidades y el tipo de duración del movimiento.
+      </p>
+      <p class="img_centrada"><img src="img/bloques2/bloques2-8.png" width="50%" alt=""></p>
+      <h4>Hacer funcionar los motores en la dirección</h4>
+      <p class="texto">
+         Empieza a mover la base motriz en una dirección.
+         <br><br>
+         Utilizaremos el bloque Establecer motores de movimiento para que coincida con los puertos de su modelo que
+         están conectados a motores grandes. Los puertos predeterminados son B (izquierda) y C (derecha).
+         <br><br>
+         La velocidad de los motores se establece mediante el bloque de establecer velocidad de movimiento. La 
+         velocidad predeterminada es del 75%.
+      </p>
+      <p class="img_centrada"><img src="img/bloques2/bloques2-9.png" width="32%" alt=""></p>
+      <p class="texto">
+         Indicamos la dirección. Según giremos el volante, éste hará el giro indicado.
+      </p>
+      <h4>Dejar de moverse</h4>
+      <p class="texto">
+         Detiene todo movimiento. 
+      </p>
+      <p class="img_centrada"><img src="img/bloques2/bloques2-10.png" width="20%" alt=""></p>
+      <p class="texto">
+         Utiliza el bloque Establecer motores de movimiento para que coincida con los puertos de su modelo que están 
+         conectados a motores. Los puertos predeterminados son B (izquierda) y C (derecha).
+      </p>
+      <h4>Establecer velocidad de movimiento</h4>
+      <p class="texto">
+         Fija la velocidad de una base de conducción en movimiento. El rango de velocidad es -100 a 100. Los
+         valores negativos cambian la dirección del movimiento. El valor predeterminado es 75%.
+      </p>
+      <p class="img_centrada"><img src="img/bloques2/bloques2-11.png" width="40%" alt=""></p>
+      <h4>Establecer motores de movimiento</h4>
+      <p class="texto">
+         Establece los motores de movimiento para los bloques de movimiento.
+      </p>
+      <p class="img_centrada"><img src="img/bloques2/bloques2-12.png" width="42%" alt=""></p>
+      <p class="texto">
+         El primer puerto especificado configura el motor izquierdo y el segundo puerto especificado configura el 
+         motor derecho. Los puertos predeterminados son B (izquierda) y C (derecha).
+      </p>
+      <p class="img_centrada"><img src="img/bloques2/bloques2-13.png" width="70%" alt=""></p>
+
+
+
+      <p class="img_centrada"><img src="img/bloques2/bloques2-14.png" width="50%" alt=""></p>
+         <br><br>
+         <br><br>
+         <br><br>
+         <br><br>
+         <br><br>
+         <br><br>
+         <br><br>
+         <br><br>
+
+
+
+      <h4>Hacer funcionar el motor durante la duración</h4>
+      <p class="texto">
+
+         Mueve un modelo hacia adelante el número especificado de segundos, grados o rotaciones con la dirección
+         especificada.
+         <br><br>
+         Los valores de dirección más altos (es decir, +99 y -99) harán que la trayectoria del arco de la base de
+         conducción sea más nítida.
+         <br><br>
+         Utilizaremos un valor de "0" para conducir en línea recta. El uso de los valores 100 y -100 hará que la base
+         de conducción gire sobre sí misma.
+         <br><br>
+         Utilizaremos el bloque Establecer motores de movimiento para que coincida con los puertos de su modelo que
+         están conectados a motores grandes. Los puertos predeterminados son B (izquierda) y C (derecha).
+         <br><br>
+         La velocidad de los motores se establece mediante el Bloque de velocidad de movimiento establecida. La
+         velocidad predeterminada es del 50%.
+      </p>
+      <p class="img_centrada"><img src="img/bloques2/bloques2-2.png" width="70%" alt=""></p>
+
+
+
+
+
+
+
+
+
+
+
+      <h4>Establecer la posición de los motores en la parada</h4>
+      <p class="texto">
+         Establece la acción que realizarán los motores de movimiento cuando se complete su comando actual. Se puede
+         configurar para flotar o mantener activamente la posición actual cuando los motores se detienen.
+      </p>
+      <p class="img_centrada"><img src="img/bloques2/bloques2-7.png" width="65%" alt=""></p>
+
+
+      <h4>Encendido de los motores en la dirección a una velocidad</h4>
+      <p class="texto">
+         Mueve un modelo el número especificado de segundos, grados o rotaciones a la velocidad especificada, con la
+         dirección especificada.
+         <br><br>
+         Utiliza el bloque Establecer motores de movimiento para que coincida con los puertos de su modelo que están
+         conectados a motores grandes. Los puertos predeterminados son B (izquierda) y C (derecha).
+         <br><br>
+         Los valores de dirección más altos (es decir, +99 y -99) harán que la trayectoria del arco de la base de
+         conducción sea más nítida.
+         <br><br>
+         Utiliza un valor de "0" para conducir en línea recta. El uso de los valores 100 y -100 hará que la base de
+         conducción gire sobre sí misma.
+      </p>
+      <p class="img_centrada"><img src="img/bloques2/bloques2-8.png" width="55%" alt=""></p>
+
+      <h4>Hacer funcionar los motores durante la duración a la velocidad</h4>
+      <p class="texto">
+         Mueve un modelo el número especificado de segundos, grados o rotaciones a la velocidad especificada para
+         cada motor.
+         <br><br>
+         El primer valor de velocidad establece la velocidad del motor izquierdo y el segundo valor de velocidad
+         establece la velocidad del motor derecho.
+         <br><br>
+         Utiliza el bloque Establecer motores de movimiento para que coincida con los puertos de su modelo que están
+         conectados a motores grandes. Los puertos predeterminados son B (izquierda) y C (derecha).
+      </p>
+      <p class="img_centrada"><img src="img/bloques2/bloques2-9.png" width="60%" alt=""></p>
+
+
+      <h4>Hacer funcionar los motores a la velocidad</h4>
+      <p class="texto">
+         Empieza a mover un modelo a la velocidad especificada para cada motor hasta que se le dice a los motores que
+         hagan otra cosa o el programa se detiene.
+         <br><br>
+         El primer valor de velocidad establece la velocidad del motor izquierdo y el segundo valor de velocidad
+         establece la velocidad del motor derecho.
+         <br><br>
+         Utiliza el bloque Establecer motores de movimiento para que coincida con los puertos de su modelo que están
+         conectados a motores grandes. Los puertos predeterminados son B (izquierda) y C (derecha).
+      </p>
+      <p class="img_centrada"><img src="img/bloques2/bloques2-11.png" width="50%" alt=""></p>
+      <br><br>
+      <a class="texto volver" href="javascript:history.back(-1);">Volver</a>
+   </div>
+   <div id="pie">
+      <h1> Fun Tech Academy - Calle Alcobendas, 23 Leganés 28914 Madrid - www.funtech.academy </h1>
+   </div>
+</body>
+</html>
