@@ -26,93 +26,161 @@
       <p class="texto">
          Los bloques de motor hacen que los motores funcionen u obtienen información de los motores. La categoría de
          bloques de motor contiene los bloques de motor más comunes.
-      </p>
-      <h4>Hacer funcionar el motor durante la duración</h4>
-      <p class="texto">
-         Hace funcionar un motor en sentido horario o antihorario durante un número específico de rotaciones, grados
-         o segundos.
-      </p>
-      <p class="img_centrada"><img src="img/bloques1/bloques1-1.png" width="40%" alt=""></p>
-      <p class="texto">
-         La velocidad del motor se establece mediante el bloque de velocidad establecida. La velocidad
-         predeterminada es del 75%.
          <br><br>
-         Podemos controlar a que puerto está conectado. 
+         Los bloques de motor son los bloques azules de la parte superior de la paleta de bloques. En esta categoría 
+         de bloques hay un total de 7 bloques; 5 bloques de pila y 2 bloques de reportero
       </p>
-      <p class="img_centrada"><img src="img/bloques1/bloques1-2.png" width="52%" alt=""></p>
+      <h4>Estructura de los Bloques Motor</h4>
       <p class="texto">
-         También Podemos controlar la orientación de la rotación del motor.
-      </p>
-      <p class="img_centrada"><img src="img/bloques1/bloques1-3.png" width="42%" alt=""></p>
-      <p class="texto">
-         Y controlar las unidades que le indicamos, que pueden ser rotaciones, grados o segundos.
-      </p>
-      <p class="img_centrada"><img src="img/bloques1/bloques1-4.png" width="47%" alt=""></p>
-      <h4>Restablecer el motor a la posición indicada</h4>
-      <p class="texto">
-         Lleva al motor a la posición indicada.
-      </p>
-      <p class="img_centrada"><img src="img/bloques1/bloques1-5.png" width="45%" alt=""></p>
-      <p class="texto">
-         Podemos controlar con que puerto irá conectado.
+         Selector de puerto: 
          <br><br>
-         La dirección del sentido de giro también la seleccionaremos.
-      </p>
-      <p class="img_centrada"><img src="img/bloques1/bloques1-6.png" width="45%" alt=""></p>
-      <p class="texto">
-         En el apartado de la posición podrá ir un valor comprendido desde -360 grados hasta 360 grados.
-      </p>
-      <p class="img_centrada"><img src="img/bloques1/bloques1-7.png" width="52%" alt=""></p>
-      <h4>Encendido del motor en la dirección</h4>
-      <p class="texto">
-         Empieza a hacer funcionar un motor en la dirección indicada a la velocidad establecida de forma permanente 
-         hasta que se le indique al motor que haga otra cosa o el programa se detenga.
-      </p>
-      <p class="img_centrada"><img src="img/bloques1/bloques1-8.png" width="30%" alt=""></p>
-      <p class="texto">
-         Establecemos el puerto al que está conectado.
+         &emsp;Utiliza el selector de puertos para seleccionar los motores que deseas controlar con el bloque. Puedes 
+         seleccionar uno o más motores presionando su letra.
          <br><br>
-         Puede ser en sentido de las aguas del reloj o en sentido contrario de las agujas del reloj.
-      </p>
-      <h4>Detener el motor</h4>
-      <p class="texto">
-         Detiene el funcionamiento de un motor. El motor frenará para que se detenga rápidamente por completo. El
-         motor no mantendrá su posición una vez que se haya detenido.
-      </p>
-      <p class="img_centrada"><img src="img/bloques1/bloques1-9.png" width="22%" alt=""></p>
-      <p class="texto">
-         Establecemos el puerto al que está conectado el motor que queremos parar.
-      </p>
-      <h4>Establecer la velocidad del motor</h4>
-      <p class="texto">
-         Establece la velocidad del motor indicado. 
-      </p>
-      <p class="img_centrada"><img src="img/bloques1/bloques1-10.png" width="30%" alt=""></p>
-      <p class="texto">
-         Le indicamos el puerto al que está conectado el motor.
+         Selector de dirección: 
          <br><br>
-         El rango de velocidad es de -100 a 100. Los valores negativos invertirán la dirección del motor. Si no se ha 
-         especificado la velocidad, el valor predeterminado es 75%.
+         &emsp;Utiliza el selector de dirección para elegir si el motor o motores deben moverse en el sentido de las 
+         agujas del reloj o en sentido contrario a las agujas del reloj.
+         <br><br>
+         Selector de modo:
+         <br><br>
+         &emsp;Utiliza el selector de modo para elegir cómo funcionarán los motores. Tiene tres modos: rotaciones, grados y 
+         segundos.
       </p>
-      <p class="img_centrada"><img src="img/bloques1/bloques1-11.png" width="38%" alt=""></p>
-      <h4>Conocer la Posición del motor</h4>
+      <p class="img_centrada"><img src="img/bloques1/bloques1-1.png" width="50%" alt=""></p>
+      <p class="nota">
+         Nota importante: Los bloques del motor sin campo de entrada de velocidad operarán el/los motor/s en la 
+         velocidad predeterminada del 75%, pero la velocidad podría definirse colocando un bloque de velocidad del 
+         motor establecido antes del bloque elegido.
+      </p>
+      <h3>Bloques</h3>
+      <h4>Hacer Funcionar el Motor Durante la Duración</h4>
       <p class="texto">
-         Podemos saber en que posición se encuentra un motor y si es necesario guardarla en una variable.
+         Este bloque hará funcionar uno o más motores en sentido horario o en sentido antihorario durante un número 
+         especificado de rotaciones, segundos o grados.
+         <br><br>
+         Utiliza el selector de puertos para elegir entre los puertos A-F los motores que deben funcionar, luego 
+         selecciona la dirección de rotación los motores desde el selector de dirección, y usa el selector de modo 
+         para elegir el modo con el que deben operar los motores, a partir de rotaciones, grados y segundos. El campo 
+         de entrada junto al modo es para agregar cuánto tiempo deben girar los motores.
+         <br><br>
+         No incluye un campo de entrada de velocidad. Los motores seleccionados funcionarán a la velocidad 
+         predeterminada (75%) a menos que se haya agregado un bloque "Establecer la Velocidad del Motor" antes de 
+         este bloque.
       </p>
-      <p class="img_centrada"><img src="img/bloques1/bloques1-12.png" width="20%" alt=""></p>
+      <p class="img_centrada"><img src="img/bloques1/bloques1-2.png" width="50%" alt=""></p>
+      <h4>Hacer Funcionar el Motor a una Posición</h4>
       <p class="texto">
-         Seleccionaremos en que puerto se encuentra dicho motor.
+         Este bloque hará funcionar uno o más motores en el sentido horario, en sentido antihorario o en la dirección 
+         del camino más corto hasta la posición especificada.
+         <br><br>
+         Utiliza el selector de puertos para elegir entre los puertos A-F los motores que deben funcionar, luego 
+         selecciona cómo deben alcanzar los motores la posición.
+         <br><br>
+         La posición varía de 0 a 359 grados.
+         <br><br>
+         Como el bloque de posición del motor no incluye un campo de entrada de velocidad, los motores seleccionados 
+         alcanzarán la posición elegida en la velocidad predeterminada (75%) a menos que se haya añadido un bloque de 
+         "Establecer la Velocidad del Motor" antes de este bloque.
       </p>
-      <h4>Conocer la Velocidad del motor</h4>
+      <p class="img_centrada"><img src="img/bloques1/bloques1-3.png" width="65%" alt=""></p>
+      <h4>Hacer Funcionar el Motor en la Dirección</h4>
       <p class="texto">
-         Podemos ver la velocidad de un motor y si es necesario almacenarlo en una variable.
+         Este bloque hará funcionar uno o más motores en el sentido horario o en sentido antihorario de forma 
+         permanente hasta que se le indique al motor que haga otra cosa o el programa se detenga.
+         <br><br>
+         Utiliza el selector de puertos para elegir entre los puertos A-F, los motores que deben arrancar. Luego 
+         selecciona la dirección de rotación de los motores en el selector de dirección. 
+         <br><br>
+         Como el bloque del motor de arranque no incluye un campo de entrada de velocidad, los motores seleccionados 
+         funcionarán a la velocidad predeterminada (75%) a menos que se haya añadido un bloque de "Establecer la 
+         Velocidad del Motor" antes de este bloque.
       </p>
-      <p class="img_centrada"><img src="img/bloques1/bloques1-13.png" width="20%" alt=""></p>
+      <p class="img_centrada"><img src="img/bloques1/bloques1-4.png" width="35%" alt=""></p>
+      <h4>Detener el Motor</h4>
       <p class="texto">
-         Indicaremos en que puerto se encuentra dicho motor.
+         Este bloque detiene el funcionamiento de uno o más motores. El motor se frenará, pero no mantendrá su 
+         posición una vez que se haya detenido.
+         <br><br>
+         Utiliza el selector de puertos para elegir entre los puertos A-F los motores que deben detenerse.
       </p>
+      <p class="img_centrada"><img src="img/bloques1/bloques1-6.png" width="25%" alt=""></p>
+      <h4>Establecer la Velocidad del Motor</h4>
+      <p class="texto">
+         Este bloque establece la velocidad de uno o más motores. El rango de velocidad es de -100 a 100. Los valores 
+         negativos invertirán la dirección de rotación del motor.
+         <br><br>
+         Utiliza el selector de puertos para elegir entre los puertos A-F los motores que desea configurar sus 
+         velocidades.
+      </p>
+      <p class="img_centrada"><img src="img/bloques1/bloques1-5.png" width="35%" alt=""></p>
+      <h4>Posición del Motor</h4>
+      <p class="texto">
+         Este bloque informa de la posición actual de un motor en grados de 0 a 359.
+         <br><br>
+         Utiliza el selector de puertos para elegir entre los puertos A-F el motor que deseas que informe de su 
+         velocidad.
+      </p>
+      <p class="img_centrada"><img src="img/bloques1/bloques1-7.png" width="25%" alt=""></p>
+      <h4>Velocidad del Motor</h4>
+      <p class="texto">
+         Este bloque informa de la velocidad actual de un motor. El valor dado es la velocidad real del motor, no la 
+         velocidad establecida.
+         <br><br>
+         Utiliza el selector de puertos para elegir entre los puertos A-F el motor que deseas que informe de su 
+         velocidad.
+      </p>
+      <p class="img_centrada"><img src="img/bloques1/bloques1-8.png" width="25%" alt=""></p>
+      <h3>Más Bloques de Motor</h3>
+      <p class="texto">
+         Se podrían añadir más bloques de motor a la paleta de bloques añadiendo la extensión "Más Motores" de la 
+         biblioteca de extensiones. Esta extensión incluye 10 bloques de motor más (7 pilas, 2 contadores y 1 
+         booleano). 
+         <br><br>
+         Para acceder a la biblioteca de extensiones, presiona el botón de extensiones, debajo de las categorías de 
+         bloques. Luego aparecerá una nueva categoría de bloques al final de la paleta de bloques con el nombre "Más 
+         Motores".
+      </p>
+      <h4>Ir a la Posición Relativa del Motor a la Velocidad</h4>
+      <p class="texto">
+         Este bloque hará funcionar uno o más motores a una posición relativa, a la velocidad especificada.
+      </p>
+      <p class="img_centrada"><img src="img/bloques1/bloques1-9.png" width="60%" alt=""></p>
+      <h4>Ajustar la Posición Relativa del Motor</h4>
+      <p class="texto">
+         Este bloque establece la posición relativa de uno o más motores en un valor especificado. 
+         <br><br>
+         Usa un valor de O para restablecer la posición relativa
+      </p>
+      <p class="img_centrada"><img src="img/bloques1/bloques1-10.png" width="45%" alt=""></p>
+      <h4>Posición Relativa</h4>
+      <p class="texto">
+         Este bloque informa de la posición relativa actual de un motor.
+      </p>
+      <p class="img_centrada"><img src="img/bloques1/bloques1-11.png" width="35%" alt=""></p>
+      <h4>Hacer Funcionar el Motor a una Velocidad</h4>
+      <p class="texto">
+         Este bloque hará funcionar uno o más motores a una velocidad especificada como porcentaje.
+      </p>
+      <p class="img_centrada"><img src="img/bloques1/bloques1-12.png" width="60%" alt=""></p>
+      <h4>Potencia</h4>
+      <p class="texto">
+         Este bloque devuelve, como porcentaje, el nivel de potencia utilizado actualmente por un motor específico.
+      </p>
+      <p class="img_centrada"><img src="img/bloques1/bloques1-13.png" width="30%" alt=""></p>
+      <h4>Ajustar los Motores a la Parada</h4>
+      <p class="texto">
+         Este bloque determina cómo se detendrán los motores seleccionados utilizando tres modos: frenen, mantener la 
+         posición o se desplacen.         
+      </p>
+      <p class="img_centrada"><img src="img/bloques1/bloques1-14.png" width="60%" alt=""></p>
+      <h4>Fijar Aceleración</h4>
+      <p class="texto">
+         Este bloque fija la aceleración en el arranque del motor a lenta, media o rápida.
+      </p>
+      <p class="img_centrada"><img src="img/bloques1/bloques1-15.png" width="55%" alt=""></p>
       <br><br>
-      <a class="texto volver" href="javascript:history.back(-1);">Volver</a>
+      <a class="texto volver" href="javascript:history.back(-1);">Volver a Bloques de Código</a>
    </div>
    <div id="pie">
       <h1> Fun Tech Academy - Calle Alcobendas, 23 Leganés 28914 Madrid - www.funtech.academy </h1>
